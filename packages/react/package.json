@@ -41,7 +41,9 @@
   },
   "description": "High-performance 3D node editor for React Three Fiber. React Flow ergonomics, typed-array core, instanced rendering.",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "react",
@@ -53,6 +55,7 @@
     "graph"
   ],
   "license": "MIT",
+  "author": "Cuong Cam <cuongnt2612@gmail.com>",
   "publishConfig": {
     "access": "public"
   },
