@@ -1,0 +1,43 @@
+{
+  "name": "xyzflow",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.0",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "react": "^19.1.0",
+      "react-dom": "^19.1.0",
+      "three": "^0.178.0",
+      "@react-three/fiber": "^9.3.0",
+      "@react-three/drei": "^10.6.0",
+      "@types/react": "^19.1.0",
+      "@types/react-dom": "^19.1.0",
+      "@types/three": "^0.178.0",
+      "@types/bun": "^1.3.0",
+      "typescript": "^5.9.0",
+      "tsdown": "^0.15.0",
+      "vite": "^7.0.0",
+      "@vitejs/plugin-react": "^5.0.0"
+    }
+  },
+  "scripts": {
+    "dev": "turbo run dev --filter=web",
+    "dev:all": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "preview": "turbo run preview --filter=web",
+    "typecheck": "turbo run typecheck",
+    "bench": "turbo run bench --filter=z-flow",
+    "check": "turbo run typecheck test build",
+    "clean": "turbo run clean && rm -rf node_modules .turbo"
+  },
+  "devDependencies": {
+    "bump": "^0.2.5",
+    "turbo": "^2.5.0",
+    "typescript": "catalog:"
+  }
+}

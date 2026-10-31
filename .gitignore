@@ -1,0 +1,9 @@
+node_modules
+dist
+.turbo
+*.log
+*.tsbuildinfo
+.DS_Store
+.swarm 
+.claude-flow 
+ruvector.db

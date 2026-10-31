@@ -1,0 +1,71 @@
+/* Scoped styles for the pcb example (formerly global in apps/pcb). */
+.ex-pcb {
+  position: fixed; inset: 0; overflow: hidden;
+  background: #0d1016; color: #d7deea;
+  font: 13px/1.4 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  & * { box-sizing: border-box; }
+
+& canvas { outline: none; }
+
+.toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  position: absolute; top: 0; left: 0; right: 0; z-index: 2;
+  padding: 8px 12px; background: rgba(19, 24, 36, .9); border-bottom: 1px solid #222a3b;
+  backdrop-filter: blur(6px);
+}
+.brand { font-size: 14px; letter-spacing: .02em; color: #9db4ff; margin-right: 4px; }
+.group { display: flex; align-items: center; gap: 4px; padding-left: 10px; border-left: 1px solid #222a3b; }
+.counts { margin-left: auto; color: #8592a8; font-variant-numeric: tabular-nums; }
+
+button, select, input {
+  font: inherit; color: inherit; background: #1b2232; border: 1px solid #2a3449;
+  border-radius: 6px; padding: 4px 9px; cursor: pointer;
+}
+button:hover:not(:disabled), select:hover { background: #232c40; border-color: #3a4867; }
+button:disabled { opacity: .4; cursor: default; }
+label { display: inline-flex; align-items: center; gap: 4px; color: #8592a8; }
+
+.inspector {
+  position: absolute; top: 60px; right: 12px; width: 200px; padding: 10px;
+  background: rgba(19, 24, 36, .92); border: 1px solid #222a3b; border-radius: 10px;
+  display: grid; gap: 6px; backdrop-filter: blur(6px);
+}
+.inspector .title { color: #c3cee2; text-transform: capitalize; }
+.inspector code { color: #6d7a92; font-size: 11px; text-transform: none; }
+.inspector label { justify-content: space-between; }
+.inspector input { width: 120px; cursor: text; }
+.swatches { display: flex; gap: 6px; margin-top: 4px; }
+.swatches button { width: 20px; height: 20px; padding: 0; border-radius: 50%; border: 2px solid transparent; }
+.swatches button.on { border-color: #fff; }
+
+.help {
+  position: absolute; left: 12px; bottom: 12px; padding: 10px 12px; max-width: 520px;
+  background: rgba(19, 24, 36, .92); border: 1px solid #222a3b; border-radius: 10px;
+  color: #a9b5ca; cursor: pointer; line-height: 1.7;
+}
+.help b { color: #dfe6f3; font-weight: 600; }
+.help .muted { color: #5d6980; }
+.help-toggle { position: absolute; left: 12px; bottom: 12px; border-radius: 50%; width: 30px; height: 30px; }
+
+
+/* --- PCB app --- */
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.panel {
+  position: absolute; top: 56px; right: 12px; z-index: 2; width: 320px; max-height: calc(100% - 140px); overflow: auto;
+  padding: 10px; background: rgba(19, 24, 36, .92); border: 1px solid #222a3b; border-radius: 8px;
+}
+.panel .tabs { display: flex; gap: 4px; margin-bottom: 8px; }
+.panel .tabs .on { background: #2b3a5c; border-color: #4a5f8f; }
+.panel .fields { display: grid; gap: 6px; }
+.panel .fields label { display: grid; grid-template-columns: 70px 1fr; }
+.panel table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.panel th, .panel td { text-align: left; padding: 3px 4px; border-bottom: 1px solid #222a3b; vertical-align: top; }
+.panel .nets { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 12px; }
+.panel .nets .dot { margin-right: 6px; }
+.panel .title { color: #9db4ff; }
+.muted { color: #6b778c; font-size: 12px; }
+.panel .row { display: flex; align-items: center; gap: 6px; color: #8592a8; }
+.panel .row span { width: 70px; }
+.panel .row input { width: 64px; }
+}
+.stats { position: absolute !important; top: auto !important; left: auto !important; right: 12px; bottom: 140px; }
