@@ -67,6 +67,7 @@
         "@types/react": "catalog:",
         "@types/three": "catalog:",
         "@xyzflow/tsconfig": "workspace:*",
+        "bump": "^0.2.5",
         "react": "catalog:",
         "three": "catalog:",
         "tsdown": "catalog:",
