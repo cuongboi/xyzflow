@@ -11,7 +11,7 @@ import {
   type GraphJSON,
   type Quat,
   type Vec3,
-} from 'z-flow'
+} from 'xyzflow'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   BOARDS,

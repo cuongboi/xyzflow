@@ -1,4 +1,4 @@
-import type { EdgeInput, Flow, GraphJSON, NodeInput } from 'z-flow'
+import type { EdgeInput, Flow, GraphJSON, NodeInput } from 'xyzflow'
 import { palette } from './nodes'
 
 /** A small 3D pipeline: sources → processors → sinks, spread across x / y / z. */

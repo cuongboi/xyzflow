@@ -1,5 +1,5 @@
 {
-  "name": "xyzflow",
+  "name": "xyzflow-monorepo",
   "private": true,
   "type": "module",
   "packageManager": "bun@1.3.0",
@@ -31,7 +31,7 @@
     "test": "turbo run test",
     "preview": "turbo run preview --filter=web",
     "typecheck": "turbo run typecheck",
-    "bench": "turbo run bench --filter=z-flow",
+    "bench": "turbo run bench --filter=xyzflow",
     "check": "turbo run typecheck test build",
     "clean": "turbo run clean && rm -rf node_modules .turbo"
   },

@@ -27,11 +27,11 @@ import { useTheme } from "@/components/theme-provider"
 
 const HeroScene = lazy(() => import("./hero-scene"))
 
-const INSTALL = "npm i z-flow three @react-three/fiber @react-three/drei"
+const INSTALL = "npm i xyzflow three @react-three/fiber @react-three/drei"
 
 const QUICK_START = `import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import { Flow3D, useCreateFlow } from 'z-flow'
+import { Flow3D, useCreateFlow } from 'xyzflow'
 
 export function Editor() {
   const flow = useCreateFlow({ snap: 0.5 })
@@ -64,7 +64,7 @@ const FEATURES = [
   {
     icon: CpuIcon,
     title: "Typed-array core",
-    text: "A framework-agnostic store, also shipped as z-flow/core for workers, Node or other renderers.",
+    text: "A framework-agnostic store, also shipped as xyzflow/core for workers, Node or other renderers.",
   },
   {
     icon: Undo2Icon,
@@ -119,7 +119,7 @@ export function HomePage() {
       <header className="sticky top-0 z-20 border-b bg-background/80 backdrop-blur">
         <nav className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-6">
           <Link to="/" className="font-semibold tracking-tight">
-            z-flow
+            xyzflow
           </Link>
           <a href="#examples" className="text-sm text-muted-foreground hover:text-foreground">
             Examples
@@ -129,7 +129,7 @@ export function HomePage() {
           </a>
           <div className="ms-auto flex items-center gap-1">
             <a
-              href="https://www.npmjs.com/package/z-flow"
+              href="https://www.npmjs.com/package/xyzflow"
               className={buttonVariants({ variant: "ghost", size: "sm" })}
             >
               npm
@@ -149,7 +149,7 @@ export function HomePage() {
               A high-performance 3D node editor for React
             </h1>
             <p className="text-lg text-muted-foreground text-pretty">
-              z-flow works like React Flow — nodes, edges, connect, select, undo — but positions are{" "}
+              xyzflow works like React Flow — nodes, edges, connect, select, undo — but positions are{" "}
               <code className="font-mono text-foreground">{"{ x, y, z }"}</code> and nodes are
               three.js objects. Built on a typed-array core with instanced rendering.
             </p>
@@ -189,7 +189,7 @@ export function HomePage() {
 
         <section className="border-t bg-muted/30">
           <div className="mx-auto max-w-6xl px-6 py-16">
-            <h2 className="mb-8 text-2xl font-semibold tracking-tight">Why z-flow</h2>
+            <h2 className="mb-8 text-2xl font-semibold tracking-tight">Why xyzflow</h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {FEATURES.map(({ icon: Icon, title, text }) => (
                 <Card key={title}>
@@ -241,9 +241,9 @@ export function HomePage() {
 
       <footer className="border-t">
         <div className="mx-auto flex max-w-6xl justify-between px-6 py-8 text-sm text-muted-foreground">
-          <span>z-flow · MIT License</span>
-          <a href="https://www.npmjs.com/package/z-flow" className="hover:text-foreground">
-            npmjs.com/package/z-flow
+          <span>xyzflow · MIT License</span>
+          <a href="https://www.npmjs.com/package/xyzflow" className="hover:text-foreground">
+            npmjs.com/package/xyzflow
           </a>
         </div>
       </footer>

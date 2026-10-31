@@ -7,7 +7,7 @@ Monorepo: **Bun workspaces + Turborepo**.
 ```
 bun install
 bun dev          # playground at http://localhost:5173 (uses library source, HMR)
-bun run build    # turbo: z-flow (tsdown) → playground (vite), cached
+bun run build    # turbo: xyzflow (tsdown) → playground (vite), cached
 bun run test     # turbo: bun test (core unit tests)
 bun run typecheck
 bun run bench    # core benchmarks @ 100k nodes
@@ -21,7 +21,7 @@ Shared versions live in the root `workspaces.catalog` (`"react": "catalog:"`), s
 ```tsx
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import { Flow3D, useCreateFlow } from 'z-flow'
+import { Flow3D, useCreateFlow } from 'xyzflow'
 
 export function Editor() {
   const flow = useCreateFlow({ snap: 0.5 })
@@ -125,7 +125,7 @@ Measured core numbers (Bun 1.x, single thread, `bun run bench`):
 - **> 250k nodes**: add a uniform grid / BVH over slots for `pickRay` and `queryRect` (the store API stays the same).
 - **Thick edges**: swap `LineSegments` for `LineSegments2` (three/examples `fat lines`) using the same buffer layout.
 - **Labels at scale**: troika `BatchedText`, or show custom nodes only within a distance (LOD).
-- **Huge graphs**: run layout in a worker using `z-flow/core` (no React/three dependency).
+- **Huge graphs**: run layout in a worker using `xyzflow/core` (no React/three dependency).
 
 ## Layout
 
@@ -135,7 +135,7 @@ package.json             bun workspaces + version catalog
 apps/
   playground/            Vite app: demo graph, toolbar, inspector, 1k/10k/50k stress
 packages/
-  react/                 z-flow (tsdown → dist/index.js + dist/core.js)
+  react/                 xyzflow (tsdown → dist/index.js + dist/core.js)
     src/core/            framework-agnostic: GraphStore, Flow, History, MoveSession
     src/react/           Flow3D, NodesLayer (instanced/custom), EdgesLayer, Interaction
     test/                bun test unit tests

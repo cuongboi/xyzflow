@@ -23,8 +23,8 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/*": ["./src/*"],
-      "z-flow": ["../../packages/react/src/index.ts"],
-      "z-flow/core": ["../../packages/react/src/core/index.ts"]
+      "xyzflow": ["../../packages/react/src/index.ts"],
+      "xyzflow/core": ["../../packages/react/src/core/index.ts"]
     }
   },
   "include": ["src"]

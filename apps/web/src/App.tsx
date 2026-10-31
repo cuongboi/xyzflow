@@ -24,7 +24,7 @@ function ExampleShell({ children }: { children: React.ReactNode }) {
         to="/"
         className="fixed right-3 bottom-3 z-50 rounded-md border border-white/15 bg-black/60 px-3 py-1.5 text-xs text-white backdrop-blur hover:bg-black/80"
       >
-        ← z-flow home
+        ← xyzflow home
       </Link>
     </>
   )

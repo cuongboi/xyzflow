@@ -1,5 +1,5 @@
 import { RoundedBox, Text } from '@react-three/drei'
-import { customNode, instancedNode, type CustomNodeProps, type HandleDef, type NodeTypes } from 'z-flow'
+import { customNode, instancedNode, type CustomNodeProps, type HandleDef, type NodeTypes } from 'xyzflow'
 import { CylinderGeometry } from 'three'
 
 /** Data stored on every part node. */

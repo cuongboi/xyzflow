@@ -1,6 +1,6 @@
 import { GizmoHelper, GizmoViewport, Grid, OrbitControls, Stats } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { Flow3D, useCreateFlow, useFlowState, type Flow, type GraphJSON } from 'z-flow'
+import { Flow3D, useCreateFlow, useFlowState, type Flow, type GraphJSON } from 'xyzflow'
 import { useState } from 'react'
 import { addStress, demoGraph } from './demo'
 import './styles.css'

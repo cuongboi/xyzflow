@@ -12,8 +12,8 @@ export default defineConfig({
     alias: [
       { find: "@", replacement: resolve(import.meta.dirname, "./src") },
       // resolve the library from source: instant HMR, no library rebuild needed
-      { find: /^z-flow\/core$/, replacement: `${lib}/core/index.ts` },
-      { find: /^z-flow$/, replacement: `${lib}/index.ts` },
+      { find: /^xyzflow\/core$/, replacement: `${lib}/core/index.ts` },
+      { find: /^xyzflow$/, replacement: `${lib}/index.ts` },
     ],
     dedupe: ["react", "react-dom", "three", "@react-three/fiber"],
   },

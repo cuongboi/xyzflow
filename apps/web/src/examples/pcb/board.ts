@@ -1,4 +1,4 @@
-import type { EdgeShape, EdgeSnapshot, GraphJSON, NodeJSON, RotationInput } from 'z-flow'
+import type { EdgeShape, EdgeSnapshot, GraphJSON, NodeJSON, RotationInput } from 'xyzflow'
 import { PART_LIFT, type PartData, type PartType } from './components'
 
 /** Nets and their trace colors. */

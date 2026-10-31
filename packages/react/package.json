@@ -1,5 +1,5 @@
 {
-  "name": "z-flow",
+  "name": "xyzflow",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -29,6 +29,15 @@
       "import": "./dist/core.js"
     },
     "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuongboi/xyzflow.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/cuongboi/xyzflow#readme",
+  "bugs": {
+    "url": "https://github.com/cuongboi/xyzflow/issues"
   },
   "description": "High-performance 3D node editor for React Three Fiber. React Flow ergonomics, typed-array core, instanced rendering.",
   "files": [

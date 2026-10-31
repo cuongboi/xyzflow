@@ -1,5 +1,5 @@
 import { Billboard, RoundedBox, Text } from '@react-three/drei'
-import { customNode, instancedNode, type CustomNodeProps, type NodeTypes } from 'z-flow'
+import { customNode, instancedNode, type CustomNodeProps, type NodeTypes } from 'xyzflow'
 import { BoxGeometry, IcosahedronGeometry, OctahedronGeometry } from 'three'
 
 export interface CardData {

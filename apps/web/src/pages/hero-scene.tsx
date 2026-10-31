@@ -1,6 +1,6 @@
 import { OrbitControls } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { Flow3D, useCreateFlow } from "z-flow"
+import { Flow3D, useCreateFlow } from "xyzflow"
 
 import { demoGraph } from "@/examples/playground/demo"
 import { nodeTypes } from "@/examples/playground/nodes"

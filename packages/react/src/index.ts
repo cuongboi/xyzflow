@@ -1,4 +1,4 @@
-// Core (framework-agnostic; also available as `z-flow/core`)
+// Core (framework-agnostic; also available as `xyzflow/core`)
 export * from './core'
 
 // React / R3F renderer
